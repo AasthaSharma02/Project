@@ -15,17 +15,14 @@ var config = require('./config');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var dishRouter = require('./routes/dishRouter');
-var leaderRouter= require('./routes/leaderRouter');
-var promoRouter= require('./routes/promoRouter');
+var loginRouter = require('./routes/login');
+var shopRouter= require('./routes/shopping');
 var app = express();
 
 var passport = require('passport');
 var authenticate = require('./authenticate');
 
 const mongoose = require('mongoose');
-
-const Dishes = require('./models/dishes');
 
 
 const url = config.mongoUrl;
@@ -70,9 +67,7 @@ app.use('/users', usersRouter);
 app.use(express.static(path.join(__dirname, './public')));/******************************/
 
 
-app.use('/dishes', dishRouter);
-app.use ('/leaders' , leaderRouter);
-app.use ('/promotions' , promoRouter);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
