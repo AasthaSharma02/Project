@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: white;
+    min-height: 200vh;
+    color: white;
+}
+
+.Logo {
+    background-image: url(../images/favicon-32x32.png);
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+header img {
+    padding-right: 10px;
+    margin-bottom: -5px;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #cc0000;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.5s;
+    border-radius: 20px;
+    padding: 6px 15px;
+}
+
+header ul li a:hover,
+.active {
+    background-color: #fff;
+    color: #cc0000;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/banner.jpg");
+    background-size: cover;
+}
+
+header.sticky {
+    padding: 10px 100px;
+    background: rgb(100, 183, 169, 0.8);
+}
+
+header.sticky ul li a {
+    color: #000;
+}
+
+header.sticky .logo {
+    color: #fff;
+}
+
+header.sticky ul li a:hover,
+.active {
+    background-color: #fff;
+    color: #cc0000;
+}
+
+/* section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+} */
+
+/* section img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.parallax1 {
+    /* The image used */
+    background-image: url("../images/i3.jpg");
+
+    /* Set a specific height */
+    min-height: 800px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    background-image: url("../images/i2.jpg");
+
+    min-height: 1000px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    background-image: url("../images/i1.jpg");
+
+    min-height: 1000px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    /* background-color: #cc0000;
+    color: #fff;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center; */
+    /* may need to add z-index to put above other */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #cc0000;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.footer--contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    margin-left: auto;
+}
+
+.socials li,
+.contents li {
+    list-style: none;
+    padding: 4px;
+}
+
+.socials a,
+.contents a {
+    color: white;
+    font-size: 14px;
+    padding: 14px 16px;
+}
+
+.socials a:hover:not(.active),
+.contents a:hover:not(.active) {
+    color: #e60000;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.card {
+    width: 270px;
+    font-size: 20px;
+    margin: 45px;
+    text-align: center;
+}
+
+.card--image {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.card--content {
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    background-color: #e60000;
+    color: black;
+    /* justify-content: flex-start; */
+    justify-content: space-evenly;
+    padding-top: 20px;
+    flex-flow: row wrap;
+}
+
+.about {
+    background-color: #ff6666;
+    color: #000;
+    word-wrap: break-word;
+    font-size: 25px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.about h1 {
+    text-align: center;
+    font-family: Raleway;
+}
+
+.about p {
+    font-family: 'Quicksand';
+}
+
+.caption span.border {
+    background-color: #e60000;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.info {
+    color: #ddd;
+    background-color: #e60000;
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
