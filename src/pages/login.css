@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #78CCBF;
+  background-color: #cc0000;
 }
 
 form {
@@ -34,7 +34,7 @@ form .form-inner{
 }
 
 form .form-inner h2 {
-  color: #888;
+  color: #ffffff;
   font-size: 28px;
   font-weight:500;
   margin-bottom: 30px;
@@ -56,7 +56,7 @@ form .form-inner .form-group {
 }
 
 .form-inner .form-group:focus-within label {
-  color: #fe4880;
+  color: #cc0000;
 }
 
 form .form-inner .form-group input {
